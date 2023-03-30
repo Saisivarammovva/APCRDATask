@@ -1,0 +1,204 @@
+﻿
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title-AP CRDA</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .news_scroll {
+            background: transparent;
+            min-height: 310px;
+            box-shadow: none;
+            float: left;
+            width: 100%;
+            margin-bottom: 18px;
+        }
+    </style>
+
+    <style>
+        .carousel-control-prev {
+            color: black;
+        }
+
+        .carousel-control-next {
+            color: black;
+        }
+
+        .first-txt {
+            position: absolute;
+            top: 94px;
+            left: 68px;
+            color: white;
+        }
+
+        .icon-image {
+            position: absolute;
+            top: 10px;
+            left: 109px;
+            color: white;
+            transition: all 1.3s;
+
+        }
+        .icon-image2 {
+            position: absolute;
+            top: 45px;
+            left: 202px;
+            color: white;
+            transition: all 1.3s;
+        }
+        *{
+            margin:0px;
+            padding:0px;
+            font-family:sans-serif;
+        }
+       /* body{
+            display:flex;
+            justify-content:center;
+            height:100vh;
+            background:Whitesmoke;
+            align-items:center;
+        }
+        .container{
+            display:flex;
+
+        }
+        .card{
+            height:500px;
+            margin:50px;
+            box-shadow:5px 5px 20px black;
+            overflow:hidden;
+        }
+        img{
+            height:500px;
+            width:350px;
+            border-radius:3px;
+            transition: .5s;
+        }
+        .intro{
+            height:70px;
+            width:350px;
+            padding:6px;
+            box-sizing:border-box;
+            position:absolute;
+            bottom:240px;
+            background:rgb(27,27,27,.5);
+            color:white;
+            transition: .5s;
+        }
+        .card:hover{
+            cursor:pointer;
+        }
+        .card:hover .intro{
+            height:220px;
+            bottom:240px;
+            background:black;
+        }
+        .card:hover img{
+            transform: scale(1.1) rotate(-3deg);
+        }*/
+
+/**/
+       /* .zoom {
+            padding: 50px;
+            transition: transform .2s;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+            .zoom:hover {
+                -ms-transform: scale(-1.2);  IE 9
+                -webkit-transform: scale(-1.2);  Safari 3-8
+                transform: scale(1.2);
+            }
+*/
+
+        /*.practise-3-item {
+            margin: 24px;
+            width: 50px;
+            height: 50px;
+            background: #f50057;
+            animation: zoom-in-zoom-out 1s ease infinite;
+        }*/
+
+    @*@keyframes practise-3-item {
+            0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}*@
+    </style>
+
+</head>
+<body>
+    <div>
+       
+        <table style="width:100%">
+            <tr>
+                <td align="center">
+
+                    <img src="~/Images/header.jpeg" style="height:100px;width:100%" class="rounded" />
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="vertical-align:top;background-color:orange">
+
+                    <font size="4">
+                        @Html.ActionLink("HOME", "HOME", "APCRDA", new { @class = "navbar-brand" }) &nbsp;&nbsp;&nbsp;
+                        @Html.ActionLink("ABOUT CRDA", "ABOUTCRDA", "APCRDA", new { @class = "navbar-brand", }) &nbsp;&nbsp;&nbsp;
+                        @Html.ActionLink("TENDERS", "TENDERS", "APCRDA", new { @class = "navbar-brand" }) &nbsp;&nbsp;&nbsp;
+                        @Html.ActionLink("CAREERS", "CAREERS", "APCRDA", new { @class = "navbar-brand" }) &nbsp;&nbsp;&nbsp;
+                        @Html.ActionLink("MEDIA", "MEDIA", "APCRDA", new { @class = "navbar-brand" }) &nbsp;&nbsp;&nbsp;
+                        @Html.ActionLink("CONTACT US", "CONTACTUS", "APCRDA", new { @class = "navbar-brand" })
+                    </font>
+                   
+
+                </td>
+            <tr>
+                @RenderBody()
+            </tr>
+
+            <tr>
+                <td colspan="2" style="background-color:white;text-align:center">
+                    @RenderSection("S1", false)
+                </td>
+            </tr>
+    </div>
+
+    <div cclass="width: 100%">
+        <table style="color:white" bgcolor="#4d2f1a" width="100%">
+            <tr width="">
+                <td align="center">
+
+                    <p align="center">Copyright &copy; <b>APCRDA</b> &nbsp; <span style="color:#ffad18">2020</span> | All rights reserved  </p>
+
+
+                </td>
+                <td></td>
+                <td align="center" VALIGN=TOP>
+                    <p align="center">Designed and Developed By <span vertical-align: middle><img src="~/Images/APO.png" /> </span></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </table>
+ 
+    </div>
+
+</body>
+</html>

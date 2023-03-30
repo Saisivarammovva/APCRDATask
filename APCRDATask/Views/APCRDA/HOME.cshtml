@@ -1,0 +1,583 @@
+﻿
+@{
+    ViewBag.Title = "HOME";
+}
+@section S1 {
+
+
+    <div id="demo" class="carousel slide" data-interval="4000" data-ride="carousel">
+        @*Indicators*@
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+            <li data-target="#demo" data-slide-to="4"></li>
+            <li data-target="#demo" data-slide-to="5"></li>
+            <li data-target="#demo" data-slide-to="6"></li>
+            <li data-target="#demo" data-slide-to="7"></li>
+            <li data-target="#demo" data-slide-to="8"></li>
+            <li data-target="#demo" data-slide-to="9"></li>
+            <li data-target="#demo" data-slide-to="10"></li>
+            <li data-target="#demo" data-slide-to="11"></li>
+            <li data-target="#demo" data-slide-to="12"></li>
+            <li data-target="#demo" data-slide-to="13"></li>
+        </ul>
+        @*The slideshow*@
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <img src="~/Images/cm10.jpeg" alt="1" width="100%">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Images/20.jpg" alt="2" width="100%">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Images/19.jpg" alt="3" width="100%">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Images/17.jpg" alt="4" width="100%">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Images/15.jpg" alt="5" width="100%">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Images/14.jpg" alt="6" width="100%">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Images/1.jpg" alt="7" width="100%">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Images/2.jpg" alt="8" width="100%">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Images/3.jpg" alt="9" width="100%">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Images/4.jpg" alt="10" width="100%">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Images/5.jpg" alt="11" width="100%">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Images/11.jpg" alt="12" width="100%">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Images/12.jpg" alt="13" width="100%">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Images/13.jpg" alt="14" width="100%">
+            </div>
+        </div>
+        @*Left and right controls*@
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+
+
+
+    <div style=" height:30px; ">
+        <marquee scrollamount="8" onmouseover="this.stop();" onmouseout="this.start();" style="padding-bottom:4px; color:red; "
+                 scrolldelay="100" direction="left" height="40">
+            <p style="padding-left:2px; font-size:18px; font-style:oblique;  padding-bottom:2px; ">
+
+                <img src="~/Images/new.gif" />
+                <b>Booking  of MIG Plots Amaravati Township</b>
+            </p>
+        </marquee>
+    </div>
+
+
+
+    <!-- About us  Part Start-->
+    <section class="about_us section-p bg_dark">
+        <div style="background-color:burlywood">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mb-10">
+                        <div class="w-box">
+                            <div class="key_updates">
+
+                                <h2 style="color:darkorange">Latest Updates</h2>
+                            </div>
+                            <div style="background-color:white">
+                                <div class="news_scroll">
+
+
+                                    <marquee scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();" style="padding-bottom:4px; "
+                                             scrolldelay="50" direction="up" height="200">
+
+
+                                        <span id="lblscroolingmarquedata" style="color:blueviolet;"><img src="~/Images/new.gif" /> <a href='https://forms.gle/vCnkGttLkSpvPXdC7' target='_blank' style='font-size:16px;  color:blueviolet; text-decoration:underline;'> Visitor Information System--APCRDA (every Monday from 10:00AM to 12:00 PM)</a>&nbsp;&nbsp;&nbsp;&nbsp; <br /><br /></span>
+
+                                        <br />
+
+
+                                    </marquee>
+
+                                </div>
+
+                                <a href="ViewAll.cshtml" target="_blank"><button type="button" class="btn btn-warning btn-lg btn-block"><b> <span style="font-size:18px"> SEE ALL LATEST UPDATES  </span> </b>  </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mb-10">
+                        <div class="w-box">
+                            <div class="key_updates">
+                                <h2 style="color:darkorange">Tenders/Auctions</h2>
+                            </div>
+                            <div style="background-color:white">
+                                <div class="news_scroll">
+                                    <marquee scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();" style="padding-bottom:4px;"
+                                             scrolldelay="50" direction="up" height="280">
+                                        <div>
+                                            <table class="tenders" cellspacing="0" cellpadding="0" rules="rows" id="gvHomeLatestupdates" style="border-width:0px;width:100%;border-collapse:collapse;overflow: auto; text-decoration:none; text-align:justify">
+                                                <tr>
+                                                    <td align="left">
+                                                        <input type="hidden" name="gvHomeLatestupdates$ctl02$hdnNotificationID" id="gvHomeLatestupdates_hdnNotificationID_0" value="NOT01098835" />
+                                                        <input type="hidden" name="gvHomeLatestupdates$ctl02$hdnWebAddress" id="gvHomeLatestupdates_hdnWebAddress_0" value="https://apeprocurement.ap.gov.in" />
+                                                        <input type="hidden" name="gvHomeLatestupdates$ctl02$hdnPath" id="gvHomeLatestupdates_hdnPath_0" />
+                                                        <input type="hidden" name="gvHomeLatestupdates$ctl02$hdnFileName" id="gvHomeLatestupdates_hdnFileName_0" />
+                                                        <input type="hidden" name="gvHomeLatestupdates$ctl02$hdnS_no" id="gvHomeLatestupdates_hdnS_no_0" value="1" />
+                                                        <a onclick="SetTarget();" id="gvHomeLatestupdates_lnkdownload_0" href="javascript:__doPostBack(&#39;gvHomeLatestupdates$ctl02$lnkdownload&#39;,&#39;&#39;)">Notice Inviting Tender for Engagement of Statutory Auditor for Audit & Other Assignments for APCRDA</a>
+
+
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left">
+                                                        <input type="hidden" name="gvHomeLatestupdates$ctl03$hdnNotificationID" id="gvHomeLatestupdates_hdnNotificationID_1" value="NOT01098839" />
+                                                        <input type="hidden" name="gvHomeLatestupdates$ctl03$hdnWebAddress" id="gvHomeLatestupdates_hdnWebAddress_1" value="www.apeprocurement.gov.in" />
+                                                        <input type="hidden" name="gvHomeLatestupdates$ctl03$hdnPath" id="gvHomeLatestupdates_hdnPath_1" />
+                                                        <input type="hidden" name="gvHomeLatestupdates$ctl03$hdnFileName" id="gvHomeLatestupdates_hdnFileName_1" />
+                                                        <input type="hidden" name="gvHomeLatestupdates$ctl03$hdnS_no" id="gvHomeLatestupdates_hdnS_no_1" value="1" />
+                                                        <a onclick="SetTarget();" id="gvHomeLatestupdates_lnkdownload_1" href="javascript:__doPostBack(&#39;gvHomeLatestupdates$ctl03$lnkdownload&#39;,&#39;&#39;)">Providing External Electrical works and other essential items to the 14 additional court halls of the AP High Court, Nelapadu - Tender cum Reverse Auction/ Reverse Tendering - Estimate Amount of Rs.4,65,00,000/-</a>
+
+
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left">
+                                                        <input type="hidden" name="gvHomeLatestupdates$ctl04$hdnNotificationID" id="gvHomeLatestupdates_hdnNotificationID_2" value="NOT01098840" />
+                                                        <input type="hidden" name="gvHomeLatestupdates$ctl04$hdnWebAddress" id="gvHomeLatestupdates_hdnWebAddress_2" value="www.apeprocurement.gov.in" />
+                                                        <input type="hidden" name="gvHomeLatestupdates$ctl04$hdnPath" id="gvHomeLatestupdates_hdnPath_2" />
+                                                        <input type="hidden" name="gvHomeLatestupdates$ctl04$hdnFileName" id="gvHomeLatestupdates_hdnFileName_2" />
+                                                        <input type="hidden" name="gvHomeLatestupdates$ctl04$hdnS_no" id="gvHomeLatestupdates_hdnS_no_2" value="1" />
+                                                        <a onclick="SetTarget();" id="gvHomeLatestupdates_lnkdownload_2" href="javascript:__doPostBack(&#39;gvHomeLatestupdates$ctl04$lnkdownload&#39;,&#39;&#39;)">Providing Temporary Steel Structure to establish High Court Digitization Centre at AP High Court premises, Nelapadu - Render-cum-Reverse Auctioning or Reverse Tendering - ECV-Rs.2,17,82,015/-</a>
+
+
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left">
+                                                        <input type="hidden" name="gvHomeLatestupdates$ctl05$hdnNotificationID" id="gvHomeLatestupdates_hdnNotificationID_3" value="NOT01098843" />
+                                                        <input type="hidden" name="gvHomeLatestupdates$ctl05$hdnWebAddress" id="gvHomeLatestupdates_hdnWebAddress_3" value="www.apeprocurement.ap.gov.in" />
+                                                        <input type="hidden" name="gvHomeLatestupdates$ctl05$hdnPath" id="gvHomeLatestupdates_hdnPath_3" />
+                                                        <input type="hidden" name="gvHomeLatestupdates$ctl05$hdnFileName" id="gvHomeLatestupdates_hdnFileName_3" />
+                                                        <input type="hidden" name="gvHomeLatestupdates$ctl05$hdnS_no" id="gvHomeLatestupdates_hdnS_no_3" value="1" />
+                                                        <a onclick="SetTarget();" id="gvHomeLatestupdates_lnkdownload_3" href="javascript:__doPostBack(&#39;gvHomeLatestupdates$ctl05$lnkdownload&#39;,&#39;&#39;)">Corrigendum-I for Providing Temporary Steel Structure to establish High Court Digitization Centre at AP High Court premises, Nelapadu - Render-cum-Reverse Auctioning or Reverse Tendering - ECV-Rs.2,17,82,015/-</a>
+
+
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left">
+                                                        <input type="hidden" name="gvHomeLatestupdates$ctl06$hdnNotificationID" id="gvHomeLatestupdates_hdnNotificationID_4" value="NOT01098838" />
+                                                        <input type="hidden" name="gvHomeLatestupdates$ctl06$hdnWebAddress" id="gvHomeLatestupdates_hdnWebAddress_4" />
+                                                        <input type="hidden" name="gvHomeLatestupdates$ctl06$hdnPath" id="gvHomeLatestupdates_hdnPath_4" value="D:\Documents\APCRDA\NotificationDocuments\NOT01098838\01~Building Insurance Tenali.pdf" />
+                                                        <input type="hidden" name="gvHomeLatestupdates$ctl06$hdnFileName" id="gvHomeLatestupdates_hdnFileName_4" value="01~Building Insurance Tenali.pdf" />
+                                                        <input type="hidden" name="gvHomeLatestupdates$ctl06$hdnS_no" id="gvHomeLatestupdates_hdnS_no_4" value="1" />
+                                                        <a onclick="SetTarget();" id="gvHomeLatestupdates_lnkdownload_4" href="javascript:__doPostBack(&#39;gvHomeLatestupdates$ctl06$lnkdownload&#39;,&#39;&#39;)">Renewal of Fire insurance for one year from midnight of 27.01.2023 for the Building cum Assets belonging to Divisional offices of APCRDA at Guntur & Tenali </a>
+
+
+
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </marquee>
+                                </div>
+
+                                <a href="NotificationsView.cshtml" target="_blank" style="color:#fff;"><button type="button" class="btn btn-warning btn-lg btn-block"> <b> <span style="font-size:18px;">SEE ALL TENDERS/AUCTIONS </span> </b></button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mb-10">
+                        <div class="w-box">
+                            <div class="key_updates">
+                                <h2 style="color:darkorange">News Articles</h2>
+                            </div>
+
+
+                            <div class="news_scroll">
+                                <div style="background-color:white">
+
+
+                                    <marquee scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();" style="padding-bottom:4px;"
+                                             scrolldelay="50" direction="up" height="280">
+
+
+
+
+
+
+                                    </marquee>
+
+                                </div>
+
+                            </div>
+                            <a href="AllNewsandEvents.cshtml" target="_blank">
+                                <button type="button" class="btn btn-warning btn-lg btn-block">
+                                    <b>
+                                        <span style="font-size:18px;">SEE ALL NEWS ARTICLES </span>
+                                    </b>
+                                </button>
+                            </a><br /><br /><br />
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- About us  Part End -->
+    <section class="practise-3-part section-p pad-bot-50">
+        <div style="background-color:antiquewhite">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="section-head">
+                            <h2 style="color:darkorange">AMARAVATI</h2><br />
+                        </div>
+                    </div>
+                </div>
+
+                @*first*@
+
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="AboutAmaravathi.cshtml" class="tiles">
+                            <div class="practise-3-item about_img">
+                                <div class="icon-box"><img src="~/Images/about.jpg" style="border-radius:10px" /></div>
+                                <div class="icon-image"><img class="" src="~/Images/Icons/about.png" style="width:80px; height:80px; color:white;" /></div>
+                                <h5 class="first-txt">About Amaravati</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="citizenservices.cshtml" class="tiles">
+                            <div class="practise-3-item dev_progress_img">
+                                <div class="icon-box">
+                                    <img src="~/Images/dev_prog_new.jpg" style="border-radius:10px" />
+                                    <div class="icon-image"><img class="" src="~/Images/Icons/cservices.png" style="width:80px; height:80px; color:white;" /></div>
+                                </div>
+                                <h5 class="first-txt">Citizen Services</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="CITIISCA/CITIISHome.cshtml" target="_self" class="tiles">
+                            <div class="practise-3-item citiisca_img">
+                                <div class="icon-box"><img src="~/Images/Citiis_Challenge3.jpg" style="border-radius:10px" /></div>
+                                <div class="icon-image"><img class="" src="~/Images/Icons/cities-hd-icons.png" style="width:80px; height:80px; color:white;" /></div>
+                                <h5 class="first-txt">Citiis Challenge</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="Dashboard/Dashboard.cshtml" class="tiles">
+                            <div class="practise-3-item dashboard_img">
+                                <div class="icon-box"><img src="~/Images/dashboard.jpg" style="border-radius:10px" /></div>
+                                <div class="icon-image"><img class="" src="~/Images/Icons/dashboardh.png" style="width:80px; height:80px; color:white;" /></div>
+                                <h5 class="first-txt">Dashboard</h5>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <br />
+
+                <!--second-->
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="DevelopmentPermissions.cshtml" class="tiles">
+                            <div class="practise-3-item devper_img">
+                                <div class="icon-box"><img src="~/Images/devper.jpg" style="border-radius:10px" /></div>
+                                <div class="icon-image"><img class="" src="~/Images/Icons/dev.png" style="width:80px; height:80px; color:white;" /></div>
+                                <h5 class="first-txt" style="top: 94px; left: 34px;">Development Permissions</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="EconomicDevelopment.cshtml" class="tiles">
+                            <div class="practise-3-item economic_img">
+                                <div class="icon-box"><img src="~/Images/economic.jpg" style="border-radius:10px" /></div>
+                                <div class="icon-image"><img class="" src="~/Images/Icons/economics.png" style="width:80px; height:80px; color:white;" /></div>
+                                <h5 class="first-txt" style="top: 94px; left: 25px;">Economic Development</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="../Views/EnvironmentWeb.aspx" class="tiles">
+                            <div class="practise-3-item environment_img">
+                                <div class="icon-box"><img src="~/Images/environment.jpg" style="border-radius:10px" /></div>
+                                <div class="icon-image"><img class="" src="~/Images/Icons/envi.png" style="width:80px; height:80px; color:white;" /></div>
+                                <h5 class="first-txt">Environment</h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="https://gis.apcrda.org/lps/index.html" target="_blank" class="tiles">
+                            <div class="practise-3-item gis_img">
+                                <div class="icon-box"><img src="~/Images/gis.jpg" style="border-radius:10px" /></div>
+                                <div class="icon-image"><img class="" src="~/Images/Icons/gis.png" style="width:80px; height:80px; color:white;" /></div>
+                                @*<div class="icon-image">*@
+                                <h5 class="first-txt">GIS  Amaravati</h5>
+                            </div>
+
+                        </a>
+                    </div>
+                </div>
+                <br />
+
+                @*third*@
+
+                <div class="row">
+                    @*<div class="icon-image">*@
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="../views/la.aspx" class="tiles">
+                            <div class="practise-3-item landacq_img">
+                                <div class="icon-box"><img src="~/Images/Land Acquisition1.jpg" style="border-radius:10px" /></div>
+                                <div class=" icon-image"><img class="" src="~/Images/Icons/landacq.png" style="width:80px; height:80px;" /></div>
+                                <h5 class="first-txt">Land Acquisition</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="landpooling.aspx" class="tiles">
+                            <div class="practise-3-item land_img">
+                                <div class="icon-box"><img src="~/Images/land.jpg" style="border-radius:10px" /></div>
+                                <div class="icon-image"><img class="" src="~/Images/Icons/land.png" style="width:80px; height:80px; color:white;" /></div>
+                                <h5 class="first-txt">Land Pooling</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="../UserInterface/Registrations/Dashboard/Dashboard.aspx" target="_blank" class="tiles">
+                            <div class="practise-3-item registration_img">
+                                <div class="icon-box"><img src="~/Images/Plot Registration dashboard2.jpg" style="border-radius:10px" /></div>
+                                <div class="icon-image"><img class="" src="~/Images/Icons/regicon.png" style="width:80px; height:80px; color:white;" /></div>
+                                <h5 class="first-txt" style="top: 94px; left: 25px;">Plot Registration dashboard  </h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+
+                        <a href="../views/Mig.aspx" class="tiles">
+                            <div class="practise-3-item landacq_img">
+                                <div class="icon-box"><img src="~/Images/Land Acquisition1.jpg" style="border-radius:10px" /></div>
+
+                                <div class="icon-image"><img class="" src="~/Images/Icons/MIG.png" style="width:80px; height:73px; color:white;" /></div>
+                            </div>
+                            <h5 class="first-txt">MIG Layout  Amaravati</h5>
+                    </div>
+                    </a>
+
+
+
+                </div>
+
+                <br />
+
+            </div>
+    </section>
+
+    <!--Testiminial Part Start-->
+    <section class="testimonial-part section-p light_bg" style="background-color:white">
+        <div class="container" >
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="section-head">
+                        <h2 style="color:darkorange">CAPITAL <span>REGION</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 col-lg-offset-1">
+
+                    <a href="MasterPlans.aspx" target="_self">
+                        <div class="master_plan">
+                            <div class="practise-item">
+                                <div class="icon-box1">
+                                    <img src="~/Images/mp.jpg" style="border-radius:10px" />
+                                    <h2 class="first-txt " style="top: 164px; left: 107px;">Master Plans & Statistics</h2>
+                                    <div class="icon-image2 "><img class="" src="~/Images/Icons/masterplan.png" style="top: 94px; left: 25px; width: 117px; height: 84px; color: white; " /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                    <a href="DevelopmentPromotion.aspx" target="_self">
+                        <div class="dev_promotio">
+                            <div class="practise-item">
+                                <div class="icon-box2">
+                                    <img src="~/Images/dp.jpg" style="border-radius:10px" />
+                                    <h2 class="first-txt" style="top: 164px; left: 107px;">Development Promotion</h2>
+                                    <div class="icon-image2"><img class="" src="~/Images/Icons/devepromotion.png" style=" top: 94px; left: 25px; width: 117px; height: 84px; color: white;" /></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <br />
+    <!-- Footer Part Start -->
+    <div style="background-color:sienna; color:white">
+        <div style="text-decoration-color:white">
+            <a href='copyrightpolicy.cshtml' style="padding-left: 0px;color:white">
+                Copyright Policy &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+
+
+            <a href='privacypolicy.cshtml' style="color: white">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy
+                Policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href='HyperLinkingPolicy.cshtml' style="color: white">Hyperlinking Policy &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+            &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href='Faqs.html' style="color: white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FAQ's &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href='TermsofUse.html' style="color: white">Terms of Use &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="CRDASitemap.html" style="border-right: 0px; color: white">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site
+                Map
+            </a>
+
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+
+        <footer class="footer-part footer-bg-dark">
+            <div style="color:white">
+                <div class="footer-widget">
+                    <div class="container">
+                        <div class="row" style="text-align:left">
+
+                            <div class="col-12 col-sm-6 col-lg-4 mt-4 mt-sm-0 p-3">
+                                <div class="footer-widget-item">
+                                    <h3>Quick Links</h3>
+                                    <ul class="footer-widget-link" style="list-style-type:none; color:white ">
+                                        <li><a href="Downloads.aspx" style="color:white"><i class="fa fa-angle-double-right"></i>Downloads</a></li>
+                                        <li><a href="Employeeservicesnew.aspx" style="color:white"><i class="fa fa-angle-double-right"></i> Internal Services</a></li>
+                                        <li><a href="https://bps.ap.gov.in/" target="_blank" style="color:white"><i class="fa fa-angle-double-right"></i> Building Penalization Scheme (BPS)</a></li>
+                                        <li><a href="http://apdpms.ap.gov.in/" target="_blank" style="color:white"><i class="fa fa-angle-double-right"></i> Development Permission Management System (DPMS)</a></li>
+                                        <li><a href="https://www.happynest.live/" target="_blank" style="color:white"><i class="fa fa-angle-double-right"></i> Happy Nest</a></li>
+                                        <li><a href="https://amaravati.ap.gov.in/" target="_blank" style="color:white"><i class="fa fa-angle-double-right"></i> My Brick-My Amaravati</a></li>
+                                        <li><a href="https://eoffice.ap.gov.in/eFileCI/" target="_blank" style="color:white"><i class="fa fa-angle-double-right"></i> Status of Receipt/Letter in eOffice</a></li>
+                                        <li><a href="https://assccl.ap.gov.in/ASSCCL/Views/V1/Home.aspx" target="_blank" style="color:white"><i class="fa fa-angle-double-right"></i> ASSCCL</a></li>
+                                        <li><a href="https://migapdtcp.ap.gov.in/" target="_blank" style="color:white"><i class="fa fa-angle-double-right"></i> MIG Layouts/Jagananna Smart Towns</a></li>
+                                    </ul>
+
+
+                                    <ul class="social_links">
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-lg-4 mt-4 mt-sm-0">
+                                <div class="footer-widget-item">
+                                    <h3>Government Portals</h3>
+                                    <ul class="footer-widget-link" style="list-style-type:none;">
+                                        <li><a href="https://www.ap.gov.in/" target="_blank" style="color:white"><i class="fa fa-angle-double-right"></i> AP State Portal</a></li>
+
+                                        <li><a href="http://spandana.ap.gov.in/" target="_blank" style="color:white"><i class="fa fa-angle-double-right"></i> Spandana Portal</a></li>
+
+                                        <li><a href="https://cdma.ap.gov.in/" target="_blank" style="color:white"><i class="fa fa-angle-double-right"></i> Municipal Administration & Urban Development</a></li>
+
+                                        <li><a href="http://www.apeprocurement.gov.in/" target="_blank" style="color:white"><i class="fa fa-angle-double-right"></i> AP eProcurement Portal</a></li>
+
+                                        <li><a href="http://goir.ap.gov.in/" target="_blank" style="color:white"><i class="fa fa-angle-double-right"></i> Government Orders</a></li>
+                                        <li><a href="https://gem.gov.in/" target="_blank" style="color:white"><i class="fa fa-angle-double-right"></i> Government e-Marketplace</a></li>
+                                        <li><a href="https://eoffice.ap.gov.in/" target="_blank" style="color:white"><i class="fa fa-angle-double-right"></i> eOffice Portal</a></li>
+                                        <li><a href="https://email.gov.in/" target="_blank" style="color:white"><i class="fa fa-angle-double-right"></i> GOV.IN</a></li>
+
+
+
+                                        <li><a href="http://dtcp.ap.gov.in/" target="_blank" style="color:white"><i class="fa fa-angle-double-right"></i> Directorate of Town and Country Planning (DTCP)</a></li>
+
+                                    </ul>
+                                    <br />
+                                    <br />
+
+
+                                    <a href="http://www.sac.ap.gov.in" target="_blank" class="portal_link" style="float:left; margin-right:5px; background-color:white "><img src="~/Images/swachhbharat.png" /></a>
+
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-lg-4 mt-4 mt-sm-0">
+                                <div class="footer-widget-item">
+                                    <h3>Get In Touch</h3>
+                                    <ul class="footer-widget-link get_touch">
+                                        <h4><i class="fas fa-map-marker-alt"></i> &nbsp;Office Address</h4>
+
+                                        <li>Andhra Pradesh Capital Region Development Authority</li>
+
+                                        <li>Lenin Center, Beside Apsara Theatre,</li>
+                                        <li>Governorpet, Vijayawada-520002.</li>
+
+                                        <li><i class="fa fa-phone"></i>&nbsp;&nbsp;Phone : 0866 - 2527110</li>
+                                    </ul>
+                                    <br />
+                                    <br />
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244942.9154033138!2d80.3959211392713!3d16.412986082600916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35effdc5425555%3A0x3611f4a669686382!2sAPCRDA!5e0!3m2!1sen!2sin!4v1559825534390!5m2!1sen!2sin" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+
+
+
+}
